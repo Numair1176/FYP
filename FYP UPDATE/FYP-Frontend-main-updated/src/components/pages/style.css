@@ -1,0 +1,62 @@
+.heading {
+    font-family: "Playfair Display", serif;
+ 
+    font-style: normal;
+}
+
+.title{
+    margin-top: 50px;
+}
+
+.title::before{
+    content: '';
+    background: rgb(141, 162, 232);
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(57px);
+}
+
+.title::after{
+    content: '';
+    background: rgb(141, 162, 232);
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+
+.table td {
+    max-width: 200px; /* Adjust the width as needed */
+    word-wrap: break-word;
+    white-space: pre-line; /* Preserve line breaks */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+.spinner-container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    height: 200vh;
+}
+
+/* style.css */
+
+.filter-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+   
+    margin-bottom: 1rem; /* Ensure it has proper spacing from the table */
+}
+
+.filter-container.show {
+    max-height: 200px; /* Adjust based on the content height */
+    padding: 1rem 0; 
+}

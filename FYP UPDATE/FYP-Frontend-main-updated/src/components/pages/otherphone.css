@@ -1,0 +1,32 @@
+.team-item{
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    height: calc(100% - 50px);
+    transition: 0.5s;
+   
+}
+
+.team-item:hover{
+    height: 100%;
+    cursor: pointer;
+}
+
+.team-item .btn-primary{
+    background-color: rgb(108, 121, 242);
+    border: 1px solid transparent;
+    margin: 0px 5px;
+    border-radius: 18px 18px 0 0;
+}
+
+
+
+.team-item img{
+    transition: 0.5s;
+}
+
+.team-item img:hover{
+    transform: scale(1);
+}
+
+
+
